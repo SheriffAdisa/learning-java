@@ -1,7 +1,7 @@
 public class variables {
 
   /*
-  Pracice Exercise
+  Practice Exercise
   Convey the following information using variables. 
 
     Name: Sheriff
