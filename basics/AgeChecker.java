@@ -1,3 +1,13 @@
+/*
+Topic: If Statements
+Concepts Practiced:
+- Boolean conditions
+- if / else if / else
+- logical operators (&&)
+
+Author: Sheriff 
+Date: March 16, 2026
+*/
 package basics;
 
 public class AgeChecker {
@@ -30,3 +40,5 @@ public class AgeChecker {
     }
   }
 }
+
+//ADD SCANNER FOR USER INPUT TO THIS WHEN COVERED
