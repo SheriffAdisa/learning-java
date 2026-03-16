@@ -10,7 +10,7 @@ Date: March 16, 2026
 */
 package basics;
 
-public class AgeChecker {
+public class ifStatements {
   /*
    * Exercise - Age Checker (conditions - if, else if, else)
    * Create a progrma that stores an age variable and prints:

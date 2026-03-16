@@ -7,7 +7,7 @@
  */
 
 package basics;
-public class GreetingProgram {
+public class printing {
 
   /*
    * Exercise: "Greeting Program"
