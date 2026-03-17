@@ -7,7 +7,7 @@
 // Date: March 12, 2026
 // 
 
-package basics;
+package basics.variables;
 public class variables {
 
   /*

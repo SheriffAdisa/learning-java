@@ -6,7 +6,7 @@
  Date: March 13, 2026
  */
 
-package basics;
+package basics.printing;
 public class printing {
 
   /*

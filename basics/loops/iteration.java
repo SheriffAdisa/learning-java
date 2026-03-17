@@ -5,9 +5,9 @@ Concepts Practiced:
 - Nested for Loops
 
 Author: Sheriff 
-Date: March 16, 2026
+Date: March 15, 2026
 */
-package basics;
+package basics.loops;
 
 
 /* Exercise: Number Counter
@@ -31,9 +31,9 @@ public class iteration {
   int sum;
   public static void main(String[] args) {
     //Challenge 1 
-    // for(int i=0; i<10; i++){  //(current count, counting up to..., update count)
-    //   System.out.println(i); //print currennt count
-    // }
+    for(int i=0; i<10; i++){  //(current count, counting up to..., update count)
+      System.out.println(i); //print currennt count
+    }
 
 
     //Optional challenge: Print only even numbers from 2 to 20
@@ -41,18 +41,6 @@ public class iteration {
     //   System.out.println(i);
     // }
 
-    //Exercise: Sum of Numbers
-    // Write a pogram that adds numbers from 1 to 10
-    //Expected output: Total = 55
-  
-
-    int total = 0; 
-
-    for(int i = 0; i <= 10; i++){
-      total += i; //aka total = total + i;
-    }
-      System.out.println("Total: " + total);
-    
   }
 
 }
