@@ -1,4 +1,24 @@
-package methods;
+/*
+Topic: Methods
+Concepts Practiced:
+- creating and calling methods
+- returning values with methods
+
+Author: Sheriff 
+Date: March 17, 2026
+*/
+
+package methods.projects;
+
+/* MINI PROJECT - Calculator application
+    Use methods and call them to simulate a 
+    calculator 
+    
+    The Calculator Must:
+    - Add
+    - Subtract
+    - Multiply
+    - Divide */
 
 public class Calculator {
   
@@ -16,8 +36,6 @@ public class Calculator {
   public static int multiply (int a, int b) {
     return a * b;
   }
-
-  
 
   public static void main(String[] args) {
     
