@@ -31,16 +31,18 @@ public class Player {
 
   //create the takeDamage() method
    void takeDamage(int damage) {
-    health -= damage; //Remove the damage from health
-    System.out.println(name + " took " + damage + " damage.");
-
+    if ( health < 0) { //If the user health is below 0
+      System.out.println(name + " has died.");
+    } else { 
+      health -= damage; //Remove the damage from health
+      System.out.println(name + " took " + damage + " damage.");
+    }
   }
 
   //Create the heal() method
   void heal(int amount){
     health += amount; //Add amount to the health
     System.out.println(name + " was healed " + amount + " health.");
-
   }
 
   public static void main(String[] args) {
