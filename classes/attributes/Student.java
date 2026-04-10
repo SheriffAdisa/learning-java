@@ -1,4 +1,4 @@
-package classes;
+package classes.attributes;
 
 /* Topic: Class Attributes
 Concepts Practiced:
