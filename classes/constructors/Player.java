@@ -1,33 +1,28 @@
 
-/* Topic: Java Class Methods
+/* Topic: Java Construtors
 Concepts Practiced:
-- Creating static and non static methods
-- Modifying a method
+- Creating and calling a construcotr
 
 Author: Sheriff 
-Date: April 10th, 2026
+Date: April 14th, 2026
 */
 
 public class Player {
 
-  /* EXERCISE - Create a Player class
-  Requirements 
-  - Player class should have:
-    -Attributes
-     - name 
-     - health
-  - Methods:
-    - takeDamage (int damage)
-    - heal (int amount)
-  - In Main:
-    - Create 2 players
-    - Damage One
-    - Heal one
-    - Print the results */
+  /* EXERCISE - Take the player class from the
+    classMethods Exercise, and add a constructor
+    to call the same code.
+  */
   
   //Attributes
   String name;
   int health = 100; //Start at 100 health
+
+  //Create a constructor
+  public Player(String name, int health) {  //Set initial values
+    this.name = name; //Initialize the variables
+    this.health = health;
+  }
 
   //create the takeDamage() method
    void takeDamage(int damage) {
@@ -41,25 +36,24 @@ public class Player {
 
   //Create the heal() method
   void heal(int amount){
+    health += amount; //Add amount to the health
     if (health > 100) {   //User health cannot exceed 100
-      System.out.println("You are already at max health");
+      health = 100; //Don't change the value of health
+      System.out.println(name + " is at max health.");
     } else { //If user can be healed
-      health += amount; //Add amount to the health
       System.out.println(name + " was healed " + amount + " health.");
     }
-  } //Just be aware that users can be healed above 100 health rn - need to fix
+  }
 
   public static void main(String[] args) {
 
-    //Create 2 player objects
-    Player player1 = new Player(); 
-    Player player2 = new Player(); 
+    //Create 2 player objects and call constructor
+    Player player1 = new Player("Reef", 90); 
+    Player player2 = new Player("Zay", 80); 
 
     //Damage player 1
-    player1.name = "Reef";
     player1.takeDamage(10);
     //Heal Player 2
-    player2.name = "Zay";
     player2.heal(10);
 
     //Print Results
